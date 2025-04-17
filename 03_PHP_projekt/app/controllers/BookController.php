@@ -24,7 +24,7 @@ class BookController {
             $description = htmlspecialchars($_POST['description']);
             $link = htmlspecialchars($_POST['link']);
 
-            // Zpracování  nahraných obrázků
+            // Zpracování nahraných obrázků
             $imagePaths = [];
             if (!empty($_FILES['images']['name'][0])) {
                 $uploadDir = '../public/images/';
@@ -54,6 +54,6 @@ class BookController {
     }
 }
 
-// Volání metody při odeslání formu
+// Volání metody při odeslání formuláře
 $controller = new BookController();
-$controller->createBook();   
+$controller->createBook();

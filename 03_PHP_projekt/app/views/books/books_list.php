@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přidat knihu</title>
     
-    <!-- Bootstrap CSS   -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link rel="stylesheet" href="/public/css/styles.css">
@@ -35,8 +35,8 @@
         <h2>Výpis knih</h2>
         <?php if(!empty($books)): ?>
             <!-- <h3>Hrubý výpis</h3> -->
-            <!-- <?php // var_dump($books) ; ?>  -->
-            <!-- <h3>Lepší strukturovaný   výpis</h3> -->
+            <!-- <?php // var_dump($books); ?>  -->
+            <!-- <h3>Lepší strukturovaný výpis</h3> -->
             <!-- <pre><?php // print_r($books);?></pre> -->
             <h3>Tabulkový výpis</h3>
             <table class="table table-bordered table-hover">

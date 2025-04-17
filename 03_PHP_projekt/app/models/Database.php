@@ -9,14 +9,14 @@ class Database {
 
     public function getConnection() {
         
-        // Odpojí připojení k data bázi tím, že změní proměnnou $this->conn na null.
+        // Odpojí připojení k databázi tím, že změní proměnnou $this->conn na null.
         // Ukončí existující PDO objekt, což může být užitečné pro správu paměti.
         $this->conn = null;
         
         try {
             
             // PDO (PHP Data Objects) – Bezpečné a univerzální připojení k databázi
-            // PDO je rozhraní pro práci s databázemi v PH
+            // PDO je rozhraní pro práci s databázemi v PHP.
             $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
             
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
