@@ -26,7 +26,7 @@
                             <a class="nav-link" href="../../views/books/book_create.php">Přidat knihu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../controllers/books_list.php">Výpis knih</a>
+                            <a class="nav-link" href="../../controllers/book_list.php">Výpis knih</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
                             
                             <div class="mb-3">
                                 <label for="title" class="form-label">Název knihy: <span class="text-danger">*</span></label>
-                                <input type="text" id="title" name="title" class="form-control" required">
+                                <input type="text" id="title" name="title" class="form-control" required>
                             </div>
 
                             <div class="mb-3">

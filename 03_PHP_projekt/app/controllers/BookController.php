@@ -40,7 +40,7 @@ class BookController {
 
             // Uložení knihy do DB - dočasné řešení, než budeme mít výpis knih
             if ($this->bookModel->create($title, $author, $category, $subcategory, $year, $price, $isbn, $description, $link, $imagePaths)) {
-                header("Location: ../controllers/books_list.php");
+                header("Location: ../controllers/book_list.php");
                 exit();
             } else {
                 echo "Chyba při ukládání knihy.";
@@ -48,9 +48,9 @@ class BookController {
         }
     }
 
-    public function listBooks() {
+    public function listBooks () {
         $books = $this->bookModel->getAll();
-        include '../views/books/books_list.php'; 
+        include '../views/books/book_list.php';
     }
 }
 

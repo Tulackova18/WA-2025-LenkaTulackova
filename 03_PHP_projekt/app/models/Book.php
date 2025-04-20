@@ -35,7 +35,7 @@ class Book {
         $sql = "SELECT * FROM books ORDER BY created_at DESC";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
-        return $stmt->fetchALL(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function getById($id) {
@@ -78,5 +78,7 @@ class Book {
         $stmt = $this->db->prepare($sql);
         return $stmt->execute([':id' => $id]);
     }
+
+
 
 }
